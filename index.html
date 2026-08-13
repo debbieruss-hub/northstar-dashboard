@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Northstar Retail | Order Center</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="brand">
+                <div class="brand-icon">N</div>
+
+                <div>
+                    <h1>Northstar</h1>
+                    <span>Retail</span>
+                </div>
+            </div>
+
+            <div class="header-status">
+                <span class="status-dot"></span>
+                Customer Support
+            </div>
+        </header>
+
+
+        <!-- Hero -->
+        <main>
+
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <span class="eyebrow">SELF-SERVICE ORDER CENTER</span>
+
+                    <h2>
+                        Track your order.
+                        <br>
+                        <span>Get answers instantly.</span>
+                    </h2>
+
+                    <p>
+                        Check your order status, delivery information,
+                        tracking details and refund status without
+                        contacting customer support.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- Search Card -->
+            <section class="lookup-section">
+
+                <div class="lookup-card">
+
+                    <div class="card-heading">
+                        <div class="heading-icon">
+                            ↗
+                        </div>
+
+                        <div>
+                            <h3>Find your order</h3>
+                            <p>
+                                Enter your order details below to continue.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="search-box">
+
+                        <div class="input-group">
+
+                            <label for="orderInput">
+                                Order ID
+                            </label>
+
+                            <input
+                                type="text"
+                                id="orderInput"
+                                placeholder="e.g. ORD-101"
+                                autocomplete="off"
+                            >
+
+                            <small>
+                                Your Order ID can be found in your confirmation email.
+                            </small>
+
+                        </div>
+
+
+                        <div class="input-group">
+
+                            <label for="emailInput">
+                                Email address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="emailInput"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                            >
+
+                            <small>
+                                Use the email address associated with your order.
+                            </small>
+
+                        </div>
+
+
+                        <button
+                            type="button"
+                            onclick="lookupOrder()"
+                            class="lookup-button"
+                        >
+                            Check Order Status
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Results -->
+            <section
+                id="resultCard"
+                class="result-card hidden"
+            >
+
+                <div class="result-header">
+
+                    <div>
+                        <span class="result-label">
+                            ORDER INFORMATION
+                        </span>
+
+                        <h3>Your Order</h3>
+                    </div>
+
+                    <div class="order-status">
+                        <span class="status-dot"></span>
+                        <span id="statusText">Status</span>
+                    </div>
+
+                </div>
+
+
+                <div id="resultContent" class="result-content"></div>
+
+            </section>
+
+
+            <!-- Help -->
+            <section class="help-section">
+
+                <div class="help-card">
+
+                    <div class="help-icon">
+                        ?
+                    </div>
+
+                    <div>
+                        <h3>Need more help?</h3>
+
+                        <p>
+                            If you cannot find your order or need additional
+                            assistance, please contact our support team.
+                        </p>
+                    </div>
+
+                    <button class="secondary-button">
+                        Contact Support
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <div>
+                © 2026 Northstar Retail Co.
+            </div>
+
+            <div class="footer-links">
+                <span>Privacy</span>
+                <span>Terms</span>
+                <span>Help Center</span>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
