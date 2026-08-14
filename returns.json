@@ -1,0 +1,27 @@
+[
+  {
+    "order_id": "ORD-101",
+    "refund_status": "Approved",
+    "refund_eta": "5-7 business days"
+  },
+  {
+    "order_id": "ORD-104",
+    "refund_status": "Processing",
+    "refund_eta": "10 business days"
+  },
+  {
+    "order_id": "ORD-102",
+    "refund_status": "Paid",
+    "refund_eta": "Refund sent to bank"
+  },
+  {
+    "order_id": "ORD-107",
+    "refund_status": "Approved",
+    "refund_eta": "3-5 business days"
+  },
+  {
+    "order_id": "ORD-109",
+    "refund_status": "Pending Review",
+    "refund_eta": "7-10 business days"
+  }
+]
