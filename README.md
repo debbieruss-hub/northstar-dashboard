@@ -1,4 +1,4 @@
-# northstar-dashboard
+# Northstar-dashboard
 Northstar Retail Co. Support Deflection MVP - Self-Serve Dashboard
 
 ## Team Members
