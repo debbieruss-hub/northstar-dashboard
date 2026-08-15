@@ -1,0 +1,57 @@
+# Northstar Dashboard - Go-Live Readiness Note
+
+**Date:**
+
+**Pod:** 
+Olang'o Benony Joseph
+Sithandekile Ndhlovu
+Michael Onyango
+Deborah Russell-Abia 
+
+## 1. What Works (Covered Categories: Orders + Returns)
+- Customers can enter an Order ID + Email to see real-time shipping status, carrier, tracking number, and ETA.
+- If that order has a return/refund in progress, the refund status and ETA are displayed directly on the same dashboard.
+- All invalid Order IDs return a user-friendly "Order ID not found" error.
+- The dashboard is fully responsive and works on desktop browsers.
+- Error handling for empty fields shows "Please enter both Order ID and Email."
+- The Flask API serves both order and return data from mock JSON files.
+
+## 2. Known Broken (Deferred to V2)
+
+-  Stock availability queries are NOT implemented (scoped to 2 categories per sprint brief).
+-  Mock data is static; requires replacement with Northstar's actual order database.
+-  No authentication; assumes the customer is already logged in (no session handling).
+-  Email field is validated but not used for authentication (reserved for future use).
+-  No production-grade server (using Flask development server only).
+
+## 3. Handover Instructions (For Northstar's Team)
+
+### Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/debbieruss-hub/northstar-dashboard.git
+   cd northstar-dashboard
+
+2. Ensure Python 3.9+ is installed.
+
+3. Install dependencies:
+pip install -r requirements.txt
+
+4. Start the application:
+python app.py
+
+5. Open your browser and go to:
+http://localhost:5000
+
+6. Use these test credentials to verify the flow works:
+
+Order ID	  Email	            Expected Result
+ORD-101	   alice@mail.com	  Order + Refund details
+ORD-105	   eve@mail.com	      Order only, no refund
+ORD-999	   test@mail.com       "Order ID not found"
+
+7. Replace the orders.json and returns.json file paths in app.py with Northstar's internal API endpoints.
+
+8. Update the fetch calls in script.js if the API schema changes.
+
+9. Deploy using a production WSGI server (e.g., Gunicorn, Waitress) instead of the Flask development server.
