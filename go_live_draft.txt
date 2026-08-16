@@ -1,14 +1,14 @@
-# Northstar Dashboard - Go-Live Readiness Note
+Northstar Dashboard - Go-Live Readiness Note
 
-**Date:**
+Date: 16 August, 2026.
 
-**Pod:** 
+Pod:
 Olang'o Benony Joseph
 Sithandekile Ndhlovu
 Michael Onyango
 Deborah Russell-Abia 
 
-## 1. What Works (Covered Categories: Orders + Returns)
+1. What Works (Covered Categories: Orders + Returns)
 - Customers can enter an Order ID + Email to see real-time shipping status, carrier, tracking number, and ETA.
 - If that order has a return/refund in progress, the refund status and ETA are displayed directly on the same dashboard.
 - All invalid Order IDs return a user-friendly "Order ID not found" error.
@@ -16,7 +16,7 @@ Deborah Russell-Abia
 - Error handling for empty fields shows "Please enter both Order ID and Email."
 - The Flask API serves both order and return data from mock JSON files.
 
-## 2. Known Broken (Deferred to V2)
+2. Known Broken (Deferred to V2)
 
 -  Stock availability queries are NOT implemented (scoped to 2 categories per sprint brief).
 -  Mock data is static; requires replacement with Northstar's actual order database.
@@ -24,9 +24,9 @@ Deborah Russell-Abia
 -  Email field is validated but not used for authentication (reserved for future use).
 -  No production-grade server (using Flask development server only).
 
-## 3. Handover Instructions (For Northstar's Team)
+3. Handover Instructions (For Northstar's Team)
 
-### Setup
+Setup
 1. Clone the repository:
    ```bash
    git clone https://github.com/debbieruss-hub/northstar-dashboard.git
