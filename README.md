@@ -1,4 +1,34 @@
 # Northstar-dashboard
+
+Northstar Retail Co. Support Deflection MVP - Self-Serve Dashboard
+
+---
+
+## Team Members
+
+| Name | Role |
+| :--- | :--- |
+| Olang'o Benony Joseph | Data Engineer |
+| Sithandekile Ndhlovu | API Engineer |
+| Michael Onyango | Frontend UI |
+| Deborah Russell-Abia | Integrator/QA & Process Owner |
+
+---
+
+## Project Structure
+northstar-dashboard/
+├── .gitignore
+├── requirements.txt
+├── README.md
+├── app.py
+├── orders.json
+├── returns.json
+├── index.html
+├── style.css
+├── script.js
+└── go_live_draft.txt
+
+# Northstar-dashboard
 Northstar Retail Co. Support Deflection MVP - Self-Serve Dashboard
 
 ## Team Members
